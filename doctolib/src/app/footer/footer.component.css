@@ -1,0 +1,26 @@
+.footer {
+  font-size: small;
+  text-align: center;
+  color: grey;
+  background-color: transparent;
+  line-height: initial;
+  position: sticky;
+    bottom: -15px;
+}
+ span{
+  font-size: 12pt;
+  color: red;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (max-width:699px) {
+  .footer{
+    font-size: 10pt;
+  }
+
+  footer span{
+    font-size: 10pt;
+  }
+
+}

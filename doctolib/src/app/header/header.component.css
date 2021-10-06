@@ -1,0 +1,10 @@
+.toplogo{
+  top: 0;
+  display: flex;
+  background-image: url('https://upload.wikimedia.org/wikipedia/fr/thumb/6/6c/Logo_Universit%C3%A9_Rennes_1_.svg/1280px-Logo_Universit%C3%A9_Rennes_1_.svg.png');
+  height: 70px;
+	background-color: rgba(224, 90, 90, 0.568);
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+}

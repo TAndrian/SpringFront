@@ -1,0 +1,115 @@
+<app-header></app-header>
+
+<div class="background">
+  <div fxLayoutAlign="center" class="container">
+    <mat-card fxFlex='50%' class="mat-elevation-z4" fxFlex.xs="100%" fxFlex.sm="100%">
+      <mat-toolbar class="toolbar">
+        <span class="text">Connexion</span>
+        <span class="spacer"></span>
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172"
+          style=" fill:#000000;">
+          <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+            font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+            <path d="M0,172v-172h172v172z" fill="none"></path>
+            <path
+              d="M86,154.8c-37.99719,0 -68.8,-30.80281 -68.8,-68.8v0c0,-37.99719 30.80281,-68.8 68.8,-68.8h0c37.99719,0 68.8,30.80281 68.8,68.8v0c0,37.99719 -30.80281,68.8 -68.8,68.8z"
+              fill="#ffffff"></path>
+            <g fill="#000000">
+              <path
+                d="M86,31.82c-15.64125,0 -28.38,12.73875 -28.38,28.38v15.07687c-6.37945,6.90351 -10.32,16.08469 -10.32,26.20312c0,21.33539 17.36461,38.7 38.7,38.7c21.33539,0 38.7,-17.36461 38.7,-38.7c0,-10.11844 -3.94055,-19.29961 -10.32,-26.20312v-15.07687c0,-15.64125 -12.73875,-28.38 -28.38,-28.38zM86,36.98c12.85969,0 23.22,10.36031 23.22,23.22v10.40062c-6.48024,-4.88789 -14.50242,-7.82062 -23.22,-7.82062c-8.71758,0 -16.73976,2.93274 -23.22,7.82062v-10.40062c0,-12.85969 10.36031,-23.22 23.22,-23.22zM86,93.74c4.27312,0 7.74,3.46687 7.74,7.74c0,3.3661 -2.15672,6.18797 -5.16,7.25625v5.64375c0,1.42101 -1.15899,2.58 -2.58,2.58c-1.42101,0 -2.58,-1.15899 -2.58,-2.58v-5.64375c-3.00328,-1.06828 -5.16,-3.89015 -5.16,-7.25625c0,-4.27313 3.46687,-7.74 7.74,-7.74z">
+              </path>
+            </g>
+          </g>
+        </svg>
+      </mat-toolbar>
+
+      <p style="text-align: center; font-size: 12pt; padding: 15px; pointer-events: none;">
+        Veuillez entrer votre identifiant et votre mot de passe</p>
+
+      <!--A revoir avec HTTP-->
+      <form action="login" class="login-form" fxLayout="stretch" fxLayout="column" method="POST">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 172 172"
+          style=" fill:#000000;">
+          <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+            font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+            <path d="M0,172v-172h172v172z" fill="none"></path>
+            <path
+              d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
+              fill="#fffdfd"></path>
+            <g fill="#000000">
+              <path
+                d="M85.99888,30.38667c-15.20021,0 -27.52,12.31979 -27.52,27.52v4.58667c0,15.20021 12.31979,27.52 27.52,27.52c15.20021,0 27.52,-12.31979 27.52,-27.52v-4.58667c0,-15.20021 -12.31979,-27.52 -27.52,-27.52zM85.98992,103.77333c-18.37419,0 -41.94965,9.93859 -48.73333,18.75875c-4.19221,5.45355 -0.20146,13.34792 6.67396,13.34792h84.12771c6.87541,0 10.86617,-7.89437 6.67396,-13.34792c-6.78368,-8.81557 -30.3681,-18.75875 -48.74229,-18.75875z">
+              </path>
+            </g>
+          </g>
+        </svg>
+        <mat-form-field appearance="fill">
+          <mat-label>E-mail</mat-label>
+          <input matInput name="email" type="email" [(ngModel)]="email" required />
+        </mat-form-field>
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 172 172"
+          style=" fill:#000000;">
+          <defs>
+            <radialGradient cx="86.40277" cy="80.58548" r="59.469" gradientUnits="userSpaceOnUse"
+              id="color-1_sajrmTph9IzA_gr1">
+              <stop offset="0.846" stop-color="#92a3b0"></stop>
+              <stop offset="0.926" stop-color="#a1b3c2"></stop>
+              <stop offset="1" stop-color="#b2c6d6"></stop>
+            </radialGradient>
+            <linearGradient x1="50.6927" y1="40.85824" x2="125.81083" y2="133.62644" gradientUnits="userSpaceOnUse"
+              id="color-2_sajrmTph9IzA_gr2">
+              <stop offset="0" stop-color="#f44f5a"></stop>
+              <stop offset="0.443" stop-color="#ee3d4a"></stop>
+              <stop offset="1" stop-color="#e52030"></stop>
+            </linearGradient>
+            <linearGradient x1="86.03583" y1="117.51864" x2="86.03583" y2="93.96038" gradientUnits="userSpaceOnUse"
+              id="color-3_sajrmTph9IzA_gr3">
+              <stop offset="0" stop-color="#4b4b4b"></stop>
+              <stop offset="1" stop-color="#3b3b3b"></stop>
+            </linearGradient>
+          </defs>
+          <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+            font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+            <path d="M0,172v-172h172v172z" fill="none"></path>
+            <path
+              d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z"
+              fill="#ffffff"></path>
+            <g id="Layer_1">
+              <path
+                d="M48.76917,53.38271v8.6h11.46667v-8.6c0,-14.33333 11.46667,-25.8 25.8,-25.8v0c14.33333,0 25.8,11.46667 25.8,25.8v8.6h11.46667v-8.6c0,-20.64 -16.62667,-37.26667 -37.26667,-37.26667v0c-20.64,0 -37.26667,16.62667 -37.26667,37.26667z"
+                fill="url(#color-1_sajrmTph9IzA_gr1)"></path>
+              <path
+                d="M86.03583,72.30271c0,0 11.75333,-13.18667 26.66,-13.18667c14.90667,0 26.66,12.04 26.66,26.66c0,8.88667 -8.88667,17.77333 -8.88667,17.77333l-39.84667,39.56c-2.58,2.58 -6.59333,2.58 -8.88667,0l-39.84667,-39.84667c0,0 -8.88667,-8.6 -8.88667,-17.77333c0,-14.62 11.75333,-26.66 26.66,-26.66c14.90667,0 26.37333,13.47333 26.37333,13.47333z"
+                fill="url(#color-2_sajrmTph9IzA_gr2)"></path>
+              <path
+                d="M94.63583,99.24937c0,-4.87333 -3.72667,-8.6 -8.6,-8.6c-4.87333,0 -8.6,3.72667 -8.6,8.6c0,3.72667 2.29333,6.88 5.73333,8.02667v9.17333c0,1.72 1.14667,2.86667 2.86667,2.86667c1.72,0 2.86667,-1.14667 2.86667,-2.86667v-9.17333c3.44,-1.14667 5.73333,-4.3 5.73333,-8.02667z"
+                fill="url(#color-3_sajrmTph9IzA_gr3)"></path>
+            </g>
+          </g>
+        </svg>
+        <mat-form-field appearance="fill">
+          <mat-label>Mot de passe</mat-label>
+          <input matInput name="password" type="password" [(ngModel)]="password" [type]="visible ? 'password':'text'"
+            required />
+          <mat-icon style="cursor: pointer;" matSuffix (click)="visible = !visible">
+            {{visible ? 'visibility':'visibility_off'}}</mat-icon>
+
+        </mat-form-field>
+
+        <button class="button" name="login" mat-raised-button type="submit" (click)="login()"> Se Connecter <mat-icon
+            class="mat-18">send</mat-icon>
+        </button>
+      </form>
+
+      <p style="font-size: 15px;">
+        Besoin d'un compte? <a routerLink="/register"> inscrivez-vous </a>
+      </p>
+    </mat-card>
+  </div>
+</div>
+<app-footer></app-footer>
